@@ -65,6 +65,58 @@ namespace HelloWorld
             Console.WriteLine(relacionais1 != relacionais2);
             Console.WriteLine(relacionais1 >= relacionais2);
             Console.WriteLine(relacionais1 < relacionais2);
+
+            // IF - Se
+            // Else - se não
+            int val1 = 10;
+            int val2 = 5;
+
+            if (val1 == val2){
+                Console.WriteLine("Igual");
+            }
+            else {
+                Console.WriteLine("Não atendeu");
+            }
+
+            // for - para cada
+            for (int i = 0; i <= 3; i++){
+                Console.WriteLine("For: " + i);
+            }
+
+            // while - enquanto
+
+            int contador = 0;
+            while (contador < 4){
+                Console.WriteLine("While: " + contador);
+                contador++;
+            }
+
+            // switch...case - escolher
+
+            switch (DateTime.Now.DayOfWeek){
+                case DayOfWeek.Sunday:
+                case DayOfWeek.Saturday:
+                    Console.WriteLine("Final de semana");
+                break;
+                case DayOfWeek.Monday:
+                    Console.WriteLine("Segunda-feira");
+                break;
+                 case DayOfWeek.Tuesday:
+                    Console.WriteLine("Terça-feira");
+                break;
+                 case DayOfWeek.Wednesday:
+                    Console.WriteLine("Quarta-feira");
+                break;
+                 case DayOfWeek.Thursday:
+                    Console.WriteLine("Quinta-feira");
+                break;
+                 case DayOfWeek.Friday:
+                    Console.WriteLine("Sexta-feira");
+                break;
+                default: 
+                    Console.WriteLine("Default");
+                break;
+            }
         }
     }
 }
